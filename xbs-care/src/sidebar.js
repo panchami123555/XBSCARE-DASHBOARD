@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'primeicons/primeicons.css';
 const Sidebar = () => {
   const sidebarStyle = {
     width: '80px', // Adjust the width as needed
@@ -13,12 +13,26 @@ const Sidebar = () => {
     marginLeft: '20px',
     color: '#fff', // Text color
   };
-
+  const iconStyle = {
+    marginBottom: '20px',
+    color:'black'
+  };
   return (
     <div style={sidebarStyle}>
-      
-      <p>Sidebar Content</p>
+    <div style={iconStyle}>
+    <i className="pi pi-user" style={{ fontSize: '2.5rem' }}></i>
     </div>
+    <div style={iconStyle}>
+    <i className="pi pi-home" style={{ fontSize: '2.5rem' }}></i>
+    </div>
+    <div style={iconStyle}>
+    <i className="pi pi-calendar" style={{ fontSize: '2.5rem' }}></i>
+    </div>
+    <div style={iconStyle}>
+    <i className="pi pi-file" style={{ fontSize: '2.5rem' }}></i>
+    </div>
+    <p>Sidebar Content</p>
+  </div>
   );
 };
 
